@@ -1,0 +1,87 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+#main{
+width: 100%;
+overflow: hidden;
+}
+#container-first{
+height: 100vh;
+width: 100%;
+position: relative;
+}
+#container-first>nav{
+    width: 100%;
+    height: 12%;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+nav>.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+nav>.nav-left>img{
+    width: 10%;
+}
+.na-laft-link{
+    display: flex;
+    gap: 20px;
+}
+.na-laft-link a{
+    text-decoration: none;
+    color: white;
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+nav>.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.na-right-link{
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+}
+.na-right-link a{
+    text-decoration: none;
+    color: white;
+    font-family: gilroy;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+nav>.nav-right i{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+nav>.nav-left>img{
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    #container-first>nav{
+        width: 100%;
+        height: 10%;
+    }    
+    .na-laft-link a{
+        display: none;
+    }
+    .na-right-link a{
+        display: none;
+    }
+}
